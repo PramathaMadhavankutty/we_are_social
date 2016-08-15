@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="chead">Get in Touch</h1>
+<div class="row" id="contactform">
+
+<div class="col-md-6">
+        <h2>Have a project? Discuss With Us:</h2>
+
+	            <form class="form-horizontal text-center">
+		            <div class="form-group">
+			            <label class="control-label col-md-2" for="name">Your Name:</label>
+			            <div class="col-md-8">
+				            <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+			            </div>
+		            </div>
+		            <div class="form-group">
+			            <label class="control-label col-md-2" for="email">Your Email:</label>
+			            <div class="col-md-8">
+				            <input type="text" class="form-control" id="email" placeholder="Your Email Address" required>
+			            </div>
+		            </div>
+		            <div class="form-group">
+                        <label class="control-label col-md-2" for="phone">Your Phone Number:</label>
+                        <div class="col-md-8">
+				            <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+			            </div>
+		            </div>
+		            <div class="form-group">
+			            <label class="control-label col-md-2" for="comments">Enquiry or comments:</label>
+			            <div class="col-md-8">
+				            <textarea class="form-control" id="comments" placeholder="Please write your comments here!" rows="5"></textarea>
+			            </div>
+		            </div>
+		            <div class="form-group">
+			            <div class="col-md-offset-2">
+				            <div class="checkbox">
+					            <label><input type="checkbox">Subscribe to our Newsletter? Please tick the box.</label>
+				            </div><br>
+				            <a href="#" type="submit" class="btn col-md-offset-6 btn-lg btn-success">Submit</a>
+			            </div>
+		            </div>
+	            </form>
+</div>
+
+        <div class="col-md-6 contact">
+            <h2 class="chead">Contact Us</h2>
+            <h4 style="font-family: Verdana, sans-serif;font-weight:bold">DUBLIN</h4>
+
+            <p> Grosvenor Place, </p>
+            <p> Rathmines, </p>
+            <p> Dublin 6, Ireland </p>
+            <i class="fa fa-phone "style="color: white">+353 222 222 222</i><br>
+            <i class="fa fa-envelope "style="color: white">wearesocial@mail.com</i><br>
+            <hr>
+            <h4 style="font-family: Verdana, sans-serif;font-weight:bold">LIMERICK</h4>
+
+            <p>Merchants Quay , </p>
+            <p> Limerick, </p>
+            <p> Ireland </p>
+            <i class="fa fa-phone" style="color: white">+353 333 222 444</i><br>
+
+            <i class="fa fa-envelope"style="color: white">wearesocial@mail.com</i><br>
+
+        </div>
+</div>
+
+    <div class="row col-md-8 col-md-offset-2 ">
+            <h1 class="chead">Get Directions</h1>
+           <div class="" id="googleMap">
+           </div>
+    </div>
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js"> </script>
+
+    <script>
+    var myCenter = new google.maps.LatLng(53.320977, -6.272401);
+    function initialize() {
+        var mapProp = {
+            center:myCenter,
+            zoom:13,
+            scrollwheel:false,
+            draggable:false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({
+            position:myCenter
+        });
+        marker.setMap(map);}
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+{% endblock %}

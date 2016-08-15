@@ -1,0 +1,122 @@
+.imghead{
+    background-image: url("/static/images/telco.png");
+    width: 100%;
+    height:100%;
+    max-width: 100%;
+    display: block;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-position:center center;
+    border-radius: 50%;
+
+}
+.head{
+    text-align:center;
+    color: blue;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-weight: bolder;
+}
+.join{
+    background-color: #468847;
+    font-family: "Droid Serif", "DejaVu Serif", "STIX", serif;
+    border-radius: 5%;
+}
+
+
+/*.img-responsive{
+    width: 100%;
+    height: 70%;
+    border-radius: 2%;
+}*/
+.subhead{
+
+    font-family:"Droid Serif", "DejaVu Serif", "STIX", serif;
+    text-align: center;
+    color: #000000;
+    font-weight:bold;
+    font-size: 20px;
+}
+.ipara{
+    color: #000000;
+    text-align: justify;
+}
+
+.para{
+    text-align: justify;
+    color: white;
+
+}
+h2{
+    color: #eeeeee;
+}
+
+.footer{
+    background-color:#009871 ;
+    transition: background-color 0.5s ease;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+.fa{
+    color: black;
+
+}
+.bg1{
+    background: #206ea1;
+}
+.bg2{
+    background: #468847;
+}
+.bg3{
+    background: #a94442;
+}
+.content{
+    text-align: center;
+    font-size: large;
+    padding-bottom: 3%;
+
+}
+.contact{
+
+   text-align: center;
+    color:white;
+
+}
+.fa-2x{
+    color: white;
+}
+.chead{
+    text-align:center;
+
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#googleMap{
+
+
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    margin-bottom: 20px;
+}
+
+#contactform{
+    color:white;
+    background: linear-gradient(15deg, black, cornflowerblue);
+    margin-top: 10px;
+}
+.control-label{
+    font-weight:bolder;
+}
+
+.subject{
+    color: #000000;
+}
+
+

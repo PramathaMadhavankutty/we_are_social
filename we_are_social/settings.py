@@ -37,6 +37,23 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
+    'django_forms_bootstrap',
+    'debug_toolbar',
+    'tinymce',
+    'emoticons',
+    'home',
+    'accounts',
+    'paypal_store',
+    'products',
+    'paypal.standard.ipn',
+    'magazines',
+    'reusable_blog',
+    'disqus',
+    'threads',
+    'polls',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -55,7 +72,7 @@ ROOT_URLCONF = 'we_are_social.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,3 +136,41 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = ''
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'), # static directory at project level
+)
+
+
+
+SITE_ID = 4
+
+AUTH_USER_MODEL = 'accounts.User'
+
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',
+                           'accounts.backends.EmailAuth',)
+
+
+# Stripe settings
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_mttFwgc78Jk5ShtvskP2RHpG')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_k7CEJxI3Net5oB6i8zyT70Ya')
+
+
+# Paypal Settings
+
+SITE_URL = 'http://127.0.0.1:8000'
+PAYPAL_NOTIFY_URL = ' http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_RECEIVER_EMAIL = 'pramatha.madhavankutty@yahoo.com'
+
+
+#Tinymce settings
+
+TINYMCE_JS_ROOT = os.path.join(BASE_DIR, 'static', 'js', 'tinymce', 'tinymce.min.js')
+
+
+MEDIA_ROOT =(os.path.join(BASE_DIR, "media"))
+MEDIA_URL = '/media/'
+
+
+DISQUS_WEBSITE_SHORTNAME = 'mybootcampblog'

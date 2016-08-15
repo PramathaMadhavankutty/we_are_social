@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+    <div class="row col-md-6">
+    <h1>Welcome!</h1>
+    <p>Thanks for joining with us!</p>
+    <p>You are logged in as <i>{{ user.email }}</i> </p>
+    <p>Your stripe id is <b><i>{{ user.stripe_id }}</i></b></p>
+    </div>
+
+
+    <div class=" row col-md-6">
+    <h1>Enjoy Our Services:</h1>
+    <p>
+    <ul>
+        <li>Subscribe Magazines</li>
+        <li>Buy Products</li>
+        <li>Post blogs</li>
+        <li>Make poll</li>
+        <li>Post your opinion</li>
+    </ul>
+    </p>
+    </div>
+</div>
+{% endblock %}

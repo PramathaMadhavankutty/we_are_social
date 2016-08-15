@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load thread_extras %}
+{% block content %}
+
+<div class="row header">
+
+    <div class="container">
+        <h1>{{ thread.name }}</h1>
+
+        {% if thread.poll %}
+
+           <div class="container">
+               <div class="col-md-8">
+                   <h4>Choose your favourite option to poll</h4>
+                   <h3>Question is : {{ thread.poll.question }}</h3><br><br>
+                   <p>Here's how the votes are so far:</p>
+                   {% for subject in thread.poll.subjects.all %}
+                       <div class="col-md-8">
+                           <strong> {{ subject.name }}</strong>
+                           <span class="pull-right"> {{ subject|vote_percentage }}%</span>
+                       </div>
+                        {% autoescape off %}
+                        {% if thread.subject %}
+                       <span class="pull-right">{% user_vote_button thread subject user %}</span>
+
+
+                        {% endif %}
+                       {% endautoescape %}
+                       <div class="col-md-6">
+                           <div class="progress">
+                               <div class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:{{ subject|vote_percentage }}%;">
+
+                               </div>
+                           </div>
+
+                       </div>
+                   {% endfor %}
+               </div>
+           </div>
+       {% endif %}
+
+       {% if user.is_authenticated %}
+           <hr>
+       <p class="pull-right">
+         <a href="{% url 'new_post' thread.id %}" class="btn btn-primary">New post</a>
+       </p>
+       {% endif %}
+
+   </div>
+ </div>
+    <div class="container">
+   {% for post in thread.posts.all %}
+     {% include "forum/post.html" %}
+   {% endfor %}
+    </div>
+
+            <div class="col-md-12">
+            <table class="table">
+                <tbody>
+                <tr class="text-info">
+                    <th>CREATED</th>
+                    <th>OWNER</th>
+                    <th>LAST POST</th>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="{{ thread.created_at }}">
+                            {{ thread.created_at|started_time }}
+                        </time>
+                    </td>
+                    <td>{{ thread.user.username }}</td>
+                    <td>{% last_posted_user_name thread %}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+{% endblock %}

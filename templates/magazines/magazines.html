@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load magazine_extras %}
+{% block content %}
+    <div class="container">
+    <h3> UPDATE YOURSELF</h3>
+    <p>Know the changing trends in Business and Technology.</p>
+    <p>As you know everything is social here. So, 40% of subscription fee will go for social funds.</p>
+    <p>And note that, these are monthly recurring payments.</p>
+
+
+    <div class="table-responsive">
+    <table class="table table-striped ">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Subscribe</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for magazine in magazines %}
+            <tr>
+            <td>{{ magazine.name }}</td>
+            <td>{{ magazine.description }}</td>
+            <td>${{ magazine.price }}</td>
+            <td>{% paypal_form_for magazine user %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    </div>
+
+{% endblock %}
