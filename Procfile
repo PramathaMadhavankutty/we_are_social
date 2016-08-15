@@ -1,1 +1,1 @@
-web: gunicorn we-are-social-django.wsgi:application
+web: gunicorn we_are_social.wsgi:application
