@@ -1,1 +1,1 @@
-web: gunicorn we_are_social:application
+web: gunicorn we_are_social:application --log-file
