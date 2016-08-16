@@ -12,6 +12,5 @@ python-dateutil==2.5.3
 six==1.10.0
 stripe
 wheel==0.29.0
-whitenoise==3.2.1
 git+https://github.com/PramathaMadhavankutty/reusable_blog_app.git
 gunicorn==19.6
