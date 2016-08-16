@@ -1,1 +1,1 @@
-web: gunicorn we_are_social.wsgi --settings=we_are_social.settings.staging
+web: gunicorn we_are_social.wsgi:application
