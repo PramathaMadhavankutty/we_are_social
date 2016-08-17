@@ -1,5 +1,13 @@
 [
 {
+    "model": "sessions.session",
+    "pk": "jqpkeehgmsf0ys49xlc8ff4pcfe4jpkb",
+    "fields": {
+        "session_data": "OGZjMmNmYjc3NGNkNjVkZDk3MDYzOGE1OTVkZDZmNWJmODJiODA5Zjp7Il9hdXRoX3VzZXJfaGFzaCI6IjIzYmQwYjkwYTc0YzExYjJhNzUzZWE0ODI2MjI2MmFjYjc1MjRhMzMiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMSJ9",
+        "expire_date": "2016-08-31T09:08:55.639Z"
+    }
+},
+{
     "model": "sites.site",
     "pk": 4,
     "fields": {
@@ -9,10 +17,9 @@
 },
 {
     "model": "accounts.user",
-    "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$24000$nUamcq57I2Uc$lW9Zi0RzJOSJDZGitR2gOPIzZlC/6rYK4Q43WYWjgiQ=",
-        "last_login": "2016-08-15T19:38:47.826Z",
+        "last_login": "2016-08-17T09:08:55.627Z",
         "is_superuser": true,
         "username": "root@mail.com",
         "first_name": "",
@@ -28,7 +35,6 @@
 },
 {
     "model": "accounts.user",
-    "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$24000$bknLtYmURraa$JHnOOtef7gGRrWiYyYgNHOiUjpW35ynJ2A/CDkSg3rA=",
         "last_login": "2016-08-15T19:40:01.526Z",
