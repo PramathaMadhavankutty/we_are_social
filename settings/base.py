@@ -111,3 +111,5 @@ STATICFILES_DIRS = (
 
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js",
                                "tinymce", "tinymce.min.js")
+
+DISQUS_WEBSITE_SHORTNAME = 'mybootcampblog'
