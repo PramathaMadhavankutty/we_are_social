@@ -7,9 +7,17 @@ This application is a website for Social Entrepreneurship where members can shar
 and can shop products online.
 
 Application Include :
-
-  Django 1.9.8
-  
+  <ul>
+  <li>Django 1.9.8,</li>
+  <li>Email Authentication,</li>
+  <li>Stripe Payments,</li>
+  <li>Paypal payments,</li>
+  <li>Paypal subscriptions,</li>
+  <li>Blogs,</li>
+  <li>Forums,</li>
+  <li>Polls</li>
+  <li>MYSQL Database with sqlite3 as database engine</li>
+ </ul> 
 
 <h4>Register Membership</h4> 
 This web application provides a paid membership. For that Stripe single payment method(test payment method) is used. 
@@ -25,6 +33,9 @@ Members can make their comments in blog. Disqus is used for providing comments i
 Threads and posts are included. Here members can make polls and post their opinion. They can create threads and ask for polls.
 Tinymice is used  to create posts in forum.
 
+<h4>Deployment</h4>
+Project finally deployed on Heroku with github as deployment method.
 
+View Project here https://we-are-social-django.herokuapp.com/
 
 
