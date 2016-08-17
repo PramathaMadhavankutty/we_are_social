@@ -1,9 +1,3 @@
-"""
-This file will provide the settings
-that we’ll use for our development environment.
-
-"""
-
 from base import *
 
 DEBUG = True
