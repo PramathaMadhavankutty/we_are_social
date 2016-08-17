@@ -1,0 +1,433 @@
+[
+{
+    "model": "sites.site",
+    "pk": 4,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$24000$nUamcq57I2Uc$lW9Zi0RzJOSJDZGitR2gOPIzZlC/6rYK4Q43WYWjgiQ=",
+        "last_login": "2016-08-15T19:38:47.826Z",
+        "is_superuser": true,
+        "username": "root@mail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "root@mail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2016-08-15T17:46:51.221Z",
+        "stripe_id": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$24000$bknLtYmURraa$JHnOOtef7gGRrWiYyYgNHOiUjpW35ynJ2A/CDkSg3rA=",
+        "last_login": "2016-08-15T19:40:01.526Z",
+        "is_superuser": false,
+        "username": "jk@mail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "jk@mail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2016-08-15T17:54:19.124Z",
+        "stripe_id": "tok_18ipKyFdEg2TlLfMBcWKHMYk",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "Sony Over-Ear Headphones",
+        "description": "Maximizing your personal audio experience has never been easier than with SONY ZX-Series Outdoor Monitor headphones",
+        "price": "59.99"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "Apple MacBook 13.3\u2033 Notebook",
+        "description": "The sleek MacBook cuts a slim profile on any desk (or in any backpack or briefcase)",
+        "price": "79.99"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "HP X3000 Wireless Optical Mouse",
+        "description": "Built with strict standards and guidelines.",
+        "price": "9.99"
+    }
+},
+{
+    "model": "magazines.magazine",
+    "pk": 1,
+    "fields": {
+        "name": "FORBES",
+        "description": "Forbes is a leading bi-weekly business magazine",
+        "price": "30.00"
+    }
+},
+{
+    "model": "magazines.magazine",
+    "pk": 2,
+    "fields": {
+        "name": "HARVARD BUSINESS REVIEW",
+        "description": "Published monthly, Harvard Business Review delivers entrepreneurial ideas, technology advice etc",
+        "price": "99.00"
+    }
+},
+{
+    "model": "magazines.magazine",
+    "pk": 3,
+    "fields": {
+        "name": "FAST COMPANY",
+        "description": "Learn what makes businesses succeed and find out how the best are thriving in the business world.",
+        "price": "14.99"
+    }
+},
+{
+    "model": "magazines.magazine",
+    "pk": 4,
+    "fields": {
+        "name": "ENTREPRENEUR",
+        "description": "A definitive guide to all the diverse challenges of business ownership",
+        "price": "11.99"
+    }
+},
+{
+    "model": "reusable_blog.post",
+    "pk": 1,
+    "fields": {
+        "author": 1,
+        "title": "Test Blog",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet ligula vitae turpis facilisis tincidunt eget at eros. Nulla in justo sed odio cursus commodo eu ut magna. Aenean vitae rhoncus risus. Phasellus tincidunt, nulla in venenatis ullamcorper, turpis nulla porttitor turpis, a rhoncus odio metus nec nibh. Praesent sollicitudin libero eget gravida egestas. Donec nec fermentum nisi. Nulla condimentum ex in ligula rutrum tempus. Donec semper lacus ipsum, venenatis dignissim sem lobortis non. Donec in purus eu libero posuere tempus in sed lacus. Nunc nulla risus, bibendum eu suscipit ultrices, aliquet non magna. Morbi turpis nisi, venenatis ac risus non, accumsan accumsan ante. Nullam eget efficitur eros. In ligula leo, fringilla eu tempor in, dictum a libero. Praesent suscipit nulla mauris, vitae efficitur diam efficitur elementum. In vitae turpis eu lectus finibus venenatis quis ac risus. In accumsan mauris eget libero ultrices ullamcorper.",
+        "created_date": "2016-08-15T19:28:02.420Z",
+        "published_date": "2016-08-15T19:27:51Z",
+        "views": 1,
+        "tag": "test"
+    }
+},
+{
+    "model": "reusable_blog.post",
+    "pk": 2,
+    "fields": {
+        "author": 1,
+        "title": "New Bootstrap Theme",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet ligula vitae turpis facilisis tincidunt eget at eros. Nulla in justo sed odio cursus commodo eu ut magna. Aenean vitae rhoncus risus. Phasellus tincidunt, nulla in venenatis ullamcorper, turpis nulla porttitor turpis, a rhoncus odio metus nec nibh. Praesent sollicitudin libero eget gravida egestas. Donec nec fermentum nisi. Nulla condimentum ex in ligula rutrum tempus. Donec semper lacus ipsum, venenatis dignissim sem lobortis non. Donec in purus eu libero posuere tempus in sed lacus. Nunc nulla risus, bibendum eu suscipit ultrices, aliquet non magna. Morbi turpis nisi, venenatis ac risus non, accumsan accumsan ante. Nullam eget efficitur eros. In ligula leo, fringilla eu tempor in, dictum a libero. Praesent suscipit nulla mauris, vitae efficitur diam efficitur elementum. In vitae turpis eu lectus finibus venenatis quis ac risus. In accumsan mauris eget libero ultrices ullamcorper.",
+        "created_date": "2016-08-15T19:28:47.012Z",
+        "published_date": "2016-08-15T19:28:39Z",
+        "views": 1,
+        "tag": "Bootstrap"
+    }
+},
+{
+    "model": "reusable_blog.post",
+    "pk": 3,
+    "fields": {
+        "author": 1,
+        "title": "Freelancer",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet ligula vitae turpis facilisis tincidunt eget at eros. Nulla in justo sed odio cursus commodo eu ut magna. Aenean vitae rhoncus risus. Phasellus tincidunt, nulla in venenatis ullamcorper, turpis nulla porttitor turpis, a rhoncus odio metus nec nibh. Praesent sollicitudin libero eget gravida egestas. Donec nec fermentum nisi. Nulla condimentum ex in ligula rutrum tempus. Donec semper lacus ipsum, venenatis dignissim sem lobortis non. Donec in purus eu libero posuere tempus in sed lacus. Nunc nulla risus, bibendum eu suscipit ultrices, aliquet non magna. Morbi turpis nisi, venenatis ac risus non, accumsan accumsan ante. Nullam eget efficitur eros. In ligula leo, fringilla eu tempor in, dictum a libero. Praesent suscipit nulla mauris, vitae efficitur diam efficitur elementum. In vitae turpis eu lectus finibus venenatis quis ac risus. In accumsan mauris eget libero ultrices ullamcorper.",
+        "created_date": "2016-08-15T19:29:46.168Z",
+        "published_date": "2016-08-15T19:29:07Z",
+        "views": 1,
+        "tag": ""
+    }
+},
+{
+    "model": "threads.subject",
+    "pk": 1,
+    "fields": {
+        "name": "Forum",
+        "description": "<p>Make your discussions here. Caste vote to your favourite options &amp; post your opinion.</p>"
+    }
+},
+{
+    "model": "threads.thread",
+    "pk": 1,
+    "fields": {
+        "name": "Test Thread",
+        "user": 1,
+        "subject": 1,
+        "created_at": "2016-08-15T17:55:47.009Z"
+    }
+},
+{
+    "model": "threads.posts",
+    "pk": 1,
+    "fields": {
+        "thread": 1,
+        "comment": "<p>Test :)</p>",
+        "user": 1,
+        "created_at": "2016-08-15T17:55:47.009Z"
+    }
+},
+{
+    "model": "threads.posts",
+    "pk": 2,
+    "fields": {
+        "thread": 1,
+        "comment": "<p>good to add a test poll :)</p>",
+        "user": 2,
+        "created_at": "2016-08-15T19:41:15.821Z"
+    }
+},
+{
+    "model": "polls.poll",
+    "pk": 1,
+    "fields": {
+        "question": "Is there a need to make a test poll?",
+        "thread": 1
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 1,
+    "fields": {
+        "name": "yes",
+        "poll": 1
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 2,
+    "fields": {
+        "name": "no",
+        "poll": 1
+    }
+},
+{
+    "model": "polls.pollsubject",
+    "pk": 3,
+    "fields": {
+        "name": "Not necessary",
+        "poll": 1
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 1,
+    "fields": {
+        "poll": 1,
+        "subject": 1,
+        "user": 1
+    }
+},
+{
+    "model": "polls.vote",
+    "pk": 2,
+    "fields": {
+        "poll": 1,
+        "subject": 1,
+        "user": 2
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2016-08-15T17:53:20.862Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Forum",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2016-08-15T19:20:05.853Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "FORBES",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2016-08-15T19:23:24.430Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "HARVARD BUSINESS REVIEW",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2016-08-15T19:25:05.160Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Fast Company",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2016-08-15T19:26:37.189Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "ENTREPRENEUR",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2016-08-15T19:26:51.254Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "FAST COMPANY",
+        "action_flag": 2,
+        "change_message": "Changed name."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2016-08-15T19:28:02.424Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Test Blog",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2016-08-15T19:28:47.016Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "New Bootstrap Theme",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2016-08-15T19:29:46.172Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Freelancer",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2016-08-15T19:32:15.482Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Sony Over-Ear Headphones",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2016-08-15T19:33:32.970Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Apple MacBook 13.3\u2033 Notebook - Core 2 Duo 2.4 GHz - 2 GB RAM - 160 GB HDD - White Apple MacBook 13.3\u2033 Notebook",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2016-08-15T19:35:10.593Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "HP X3000 Wireless Optical Mouse - PC - Metallic Gray/Glossy Black HP X3000 Wireless Optical Mouse",
+        "action_flag": 1,
+        "change_message": "Added."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2016-08-15T19:39:19.584Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Apple MacBook 13.3\u2033 Notebook",
+        "action_flag": 2,
+        "change_message": "Changed name."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2016-08-15T19:39:25.466Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Apple MacBook 13.3\u2033 Notebook",
+        "action_flag": 2,
+        "change_message": "No fields changed."
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2016-08-15T19:39:35.836Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "HP X3000 Wireless Optical Mouse",
+        "action_flag": 2,
+        "change_message": "Changed name."
+    }
+}
+]
