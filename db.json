@@ -46,6 +46,25 @@
     }
 },
 {
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$24000$1qkuWr3GLVMw$Fy5e9Gp+DLIBc5jF/CBwIbLsfZb+d0ReHGNjV/ONBaw=",
+        "last_login": "2016-08-17T10:12:05.444Z",
+        "is_superuser": true,
+        "username": "admin@mail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@mail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2016-08-17T10:11:30.550Z",
+        "stripe_id": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
     "model": "products.product",
     "pk": 1,
     "fields": {
