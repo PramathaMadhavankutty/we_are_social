@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1 class="chead">Get in Touch</h1>
+<h1 class="head">Get in Touch</h1>
 <div class="row" id="contactform">
 
 <div class="col-md-6">
@@ -37,14 +37,15 @@
 				            <div class="checkbox">
 					            <label><input type="checkbox">Subscribe to our Newsletter? Please tick the box.</label>
 				            </div><br>
-				            <a href="#" type="submit" class="btn col-md-offset-6 btn-lg btn-success">Submit</a>
+				            <button onclick="myFunc()" class="btn col-md-offset-6 btn-lg btn-success">Submit</button>
 			            </div>
 		            </div>
 	            </form>
 </div>
 
+
         <div class="col-md-6 contact">
-            <h2 class="chead">Contact Us</h2>
+            <h2 class="head">Contact Us</h2>
             <h4 style="font-family: Verdana, sans-serif;font-weight:bold">DUBLIN</h4>
 
             <p> Grosvenor Place, </p>
@@ -66,7 +67,7 @@
 </div>
 
     <div class="row col-md-8 col-md-offset-2 ">
-            <h1 class="chead">Get Directions</h1>
+            <h1 class="head">Get Directions</h1>
            <div class="" id="googleMap">
            </div>
     </div>
@@ -92,5 +93,9 @@
         });
         marker.setMap(map);}
         google.maps.event.addDomListener(window, 'load', initialize);
+
+    function myFunc() {
+        alert("Submission Successfull!\n We will contact you soon!");
+    }
     </script>
 {% endblock %}
