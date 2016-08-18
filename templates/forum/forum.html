@@ -2,6 +2,7 @@
 {% load thread_extras %}
 {% block content %}
     {% load bootstrap_tags %}
+    <div class="container">
     {% for subject in subjects %}
         <div class="subject">
             <h3> <a style="color: black" href="{% url 'threads' subject.id %}"> {{ subject.name }}</a> </h3>
@@ -25,4 +26,5 @@
             </table>
         </div>
     {% endfor %}
+    </div>
 {% endblock %}
