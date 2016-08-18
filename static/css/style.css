@@ -56,9 +56,16 @@
    color: #000000;
    font-family:"Droid Serif", "DejaVu Serif", "STIX", serif;
    font-weight: normal;
+   text-align: center;
 
 }
+.cpara{
+   color: #eeeeee;
+   font-family:"Droid Serif", "DejaVu Serif", "STIX", serif;
+   font-weight: normal;
+   text-align: center;
 
+}
 
 .footer{
     background-color:#009871 ;
