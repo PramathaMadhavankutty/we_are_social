@@ -129,8 +129,9 @@
 .subject{
     color: #000000;
 }
-.form-control, input{
-    border-width: 0px;
+.form-control,input{
+    border-width: 1px;
+    border-color: #cccccc;
 }
 p{
     text-align: justify;
