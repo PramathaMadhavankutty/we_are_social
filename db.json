@@ -1,6 +1,14 @@
 [
 {
     "model": "sessions.session",
+    "pk": "br41ey8sbsm42jfhj3gch7ibq7bcwhf1",
+    "fields": {
+        "session_data": "MTkyOGNiNGU0ZjQzMGNiZTlkNjI2ZTkzMGNlNjIwNmU3YTQ2ZjczMjp7Il9hdXRoX3VzZXJfaGFzaCI6IjQ2MTcwNmZkOWJkMGIwNDhmYWMzNWI5NmM2YTI4OTY0MTIzMjcxYWQiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMiJ9",
+        "expire_date": "2016-09-01T17:09:14.797Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "ekcm43cqljuz33ejfyj99qhn8nt7yzsd",
     "fields": {
         "session_data": "MTkyOGNiNGU0ZjQzMGNiZTlkNjI2ZTkzMGNlNjIwNmU3YTQ2ZjczMjp7Il9hdXRoX3VzZXJfaGFzaCI6IjQ2MTcwNmZkOWJkMGIwNDhmYWMzNWI5NmM2YTI4OTY0MTIzMjcxYWQiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMiJ9",
@@ -17,6 +25,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$24000$nUamcq57I2Uc$lW9Zi0RzJOSJDZGitR2gOPIzZlC/6rYK4Q43WYWjgiQ=",
         "last_login": "2016-08-17T10:45:06.913Z",
@@ -35,9 +44,10 @@
 },
 {
     "model": "accounts.user",
+    "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$24000$bknLtYmURraa$JHnOOtef7gGRrWiYyYgNHOiUjpW35ynJ2A/CDkSg3rA=",
-        "last_login": "2016-08-18T14:40:39.187Z",
+        "last_login": "2016-08-18T17:09:14.785Z",
         "is_superuser": false,
         "username": "jk@mail.com",
         "first_name": "",
@@ -53,6 +63,7 @@
 },
 {
     "model": "accounts.user",
+    "pk": 3,
     "fields": {
         "password": "pbkdf2_sha256$24000$1qkuWr3GLVMw$Fy5e9Gp+DLIBc5jF/CBwIbLsfZb+d0ReHGNjV/ONBaw=",
         "last_login": "2016-08-17T10:12:05.444Z",
@@ -136,12 +147,14 @@
     "model": "reusable_blog.post",
     "pk": 1,
     "fields": {
-        "author": 1,
+        "author": [
+            "root@mail.com"
+        ],
         "title": "Test Blog",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet ligula vitae turpis facilisis tincidunt eget at eros. Nulla in justo sed odio cursus commodo eu ut magna. Aenean vitae rhoncus risus. Phasellus tincidunt, nulla in venenatis ullamcorper, turpis nulla porttitor turpis, a rhoncus odio metus nec nibh. Praesent sollicitudin libero eget gravida egestas. Donec nec fermentum nisi. Nulla condimentum ex in ligula rutrum tempus. Donec semper lacus ipsum, venenatis dignissim sem lobortis non. Donec in purus eu libero posuere tempus in sed lacus. Nunc nulla risus, bibendum eu suscipit ultrices, aliquet non magna. Morbi turpis nisi, venenatis ac risus non, accumsan accumsan ante. Nullam eget efficitur eros. In ligula leo, fringilla eu tempor in, dictum a libero. Praesent suscipit nulla mauris, vitae efficitur diam efficitur elementum. In vitae turpis eu lectus finibus venenatis quis ac risus. In accumsan mauris eget libero ultrices ullamcorper.",
         "created_date": "2016-08-15T19:28:02.420Z",
         "published_date": "2016-08-15T19:27:51Z",
-        "views": 1,
+        "views": 2,
         "tag": "test"
     }
 },
@@ -149,12 +162,14 @@
     "model": "reusable_blog.post",
     "pk": 2,
     "fields": {
-        "author": 1,
+        "author": [
+            "root@mail.com"
+        ],
         "title": "New Bootstrap Theme",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet ligula vitae turpis facilisis tincidunt eget at eros. Nulla in justo sed odio cursus commodo eu ut magna. Aenean vitae rhoncus risus. Phasellus tincidunt, nulla in venenatis ullamcorper, turpis nulla porttitor turpis, a rhoncus odio metus nec nibh. Praesent sollicitudin libero eget gravida egestas. Donec nec fermentum nisi. Nulla condimentum ex in ligula rutrum tempus. Donec semper lacus ipsum, venenatis dignissim sem lobortis non. Donec in purus eu libero posuere tempus in sed lacus. Nunc nulla risus, bibendum eu suscipit ultrices, aliquet non magna. Morbi turpis nisi, venenatis ac risus non, accumsan accumsan ante. Nullam eget efficitur eros. In ligula leo, fringilla eu tempor in, dictum a libero. Praesent suscipit nulla mauris, vitae efficitur diam efficitur elementum. In vitae turpis eu lectus finibus venenatis quis ac risus. In accumsan mauris eget libero ultrices ullamcorper.",
         "created_date": "2016-08-15T19:28:47.012Z",
         "published_date": "2016-08-15T19:28:39Z",
-        "views": 1,
+        "views": 3,
         "tag": "Bootstrap"
     }
 },
@@ -162,12 +177,14 @@
     "model": "reusable_blog.post",
     "pk": 3,
     "fields": {
-        "author": 1,
+        "author": [
+            "root@mail.com"
+        ],
         "title": "Freelancer",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet ligula vitae turpis facilisis tincidunt eget at eros. Nulla in justo sed odio cursus commodo eu ut magna. Aenean vitae rhoncus risus. Phasellus tincidunt, nulla in venenatis ullamcorper, turpis nulla porttitor turpis, a rhoncus odio metus nec nibh. Praesent sollicitudin libero eget gravida egestas. Donec nec fermentum nisi. Nulla condimentum ex in ligula rutrum tempus. Donec semper lacus ipsum, venenatis dignissim sem lobortis non. Donec in purus eu libero posuere tempus in sed lacus. Nunc nulla risus, bibendum eu suscipit ultrices, aliquet non magna. Morbi turpis nisi, venenatis ac risus non, accumsan accumsan ante. Nullam eget efficitur eros. In ligula leo, fringilla eu tempor in, dictum a libero. Praesent suscipit nulla mauris, vitae efficitur diam efficitur elementum. In vitae turpis eu lectus finibus venenatis quis ac risus. In accumsan mauris eget libero ultrices ullamcorper.",
         "created_date": "2016-08-15T19:29:46.168Z",
         "published_date": "2016-08-15T19:29:07Z",
-        "views": 3,
+        "views": 15,
         "tag": ""
     }
 },
@@ -184,7 +201,9 @@
     "pk": 1,
     "fields": {
         "name": "Test Thread",
-        "user": 1,
+        "user": [
+            "root@mail.com"
+        ],
         "subject": 1,
         "created_at": "2016-08-15T17:55:47.009Z"
     }
@@ -194,7 +213,9 @@
     "pk": 2,
     "fields": {
         "name": "Which Phone",
-        "user": 1,
+        "user": [
+            "root@mail.com"
+        ],
         "subject": 1,
         "created_at": "2016-08-17T10:49:05.308Z"
     }
@@ -204,7 +225,9 @@
     "pk": 3,
     "fields": {
         "name": "Best Os",
-        "user": 1,
+        "user": [
+            "root@mail.com"
+        ],
         "subject": 1,
         "created_at": "2016-08-17T10:50:25.464Z"
     }
@@ -214,7 +237,9 @@
     "pk": 4,
     "fields": {
         "name": "new thread",
-        "user": 2,
+        "user": [
+            "jk@mail.com"
+        ],
         "subject": 1,
         "created_at": "2016-08-18T16:00:03.298Z"
     }
@@ -225,7 +250,9 @@
     "fields": {
         "thread": 1,
         "comment": "<p>Test :)</p>",
-        "user": 1,
+        "user": [
+            "root@mail.com"
+        ],
         "created_at": "2016-08-15T17:55:47.009Z"
     }
 },
@@ -235,7 +262,9 @@
     "fields": {
         "thread": 1,
         "comment": "<p>good to add a test poll :)</p>",
-        "user": 2,
+        "user": [
+            "jk@mail.com"
+        ],
         "created_at": "2016-08-15T19:41:15.821Z"
     }
 },
@@ -245,7 +274,9 @@
     "fields": {
         "thread": 2,
         "comment": "<p>Suggest a good smartphone</p>",
-        "user": 1,
+        "user": [
+            "root@mail.com"
+        ],
         "created_at": "2016-08-17T10:49:05.308Z"
     }
 },
@@ -255,7 +286,9 @@
     "fields": {
         "thread": 3,
         "comment": "<p>poll for your favourite OS</p>",
-        "user": 1,
+        "user": [
+            "root@mail.com"
+        ],
         "created_at": "2016-08-17T10:50:25.464Z"
     }
 },
@@ -265,7 +298,9 @@
     "fields": {
         "thread": 4,
         "comment": "",
-        "user": 2,
+        "user": [
+            "jk@mail.com"
+        ],
         "created_at": "2016-08-18T16:00:03.298Z"
     }
 },
@@ -403,7 +438,9 @@
     "fields": {
         "poll": 1,
         "subject": 1,
-        "user": 1
+        "user": [
+            "root@mail.com"
+        ]
     }
 },
 {
@@ -412,7 +449,9 @@
     "fields": {
         "poll": 1,
         "subject": 1,
-        "user": 2
+        "user": [
+            "jk@mail.com"
+        ]
     }
 },
 {
@@ -421,7 +460,9 @@
     "fields": {
         "poll": 2,
         "subject": 6,
-        "user": 1
+        "user": [
+            "root@mail.com"
+        ]
     }
 },
 {
@@ -430,7 +471,9 @@
     "fields": {
         "poll": 3,
         "subject": 8,
-        "user": 1
+        "user": [
+            "root@mail.com"
+        ]
     }
 },
 {
@@ -439,7 +482,9 @@
     "fields": {
         "poll": 2,
         "subject": 4,
-        "user": 2
+        "user": [
+            "jk@mail.com"
+        ]
     }
 },
 {
@@ -448,7 +493,9 @@
     "fields": {
         "poll": 4,
         "subject": 10,
-        "user": 2
+        "user": [
+            "jk@mail.com"
+        ]
     }
 },
 {
@@ -456,8 +503,13 @@
     "pk": 1,
     "fields": {
         "action_time": "2016-08-15T17:53:20.862Z",
-        "user": 1,
-        "content_type": 14,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "threads",
+            "subject"
+        ],
         "object_id": "1",
         "object_repr": "Forum",
         "action_flag": 1,
@@ -469,8 +521,13 @@
     "pk": 2,
     "fields": {
         "action_time": "2016-08-15T19:20:05.853Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "1",
         "object_repr": "FORBES",
         "action_flag": 1,
@@ -482,8 +539,13 @@
     "pk": 3,
     "fields": {
         "action_time": "2016-08-15T19:23:24.430Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "2",
         "object_repr": "HARVARD BUSINESS REVIEW",
         "action_flag": 1,
@@ -495,8 +557,13 @@
     "pk": 4,
     "fields": {
         "action_time": "2016-08-15T19:25:05.160Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "3",
         "object_repr": "Fast Company",
         "action_flag": 1,
@@ -508,8 +575,13 @@
     "pk": 5,
     "fields": {
         "action_time": "2016-08-15T19:26:37.189Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "4",
         "object_repr": "ENTREPRENEUR",
         "action_flag": 1,
@@ -521,8 +593,13 @@
     "pk": 6,
     "fields": {
         "action_time": "2016-08-15T19:26:51.254Z",
-        "user": 1,
-        "content_type": 11,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "magazines",
+            "magazine"
+        ],
         "object_id": "3",
         "object_repr": "FAST COMPANY",
         "action_flag": 2,
@@ -534,8 +611,13 @@
     "pk": 7,
     "fields": {
         "action_time": "2016-08-15T19:28:02.424Z",
-        "user": 1,
-        "content_type": 13,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "reusable_blog",
+            "post"
+        ],
         "object_id": "1",
         "object_repr": "Test Blog",
         "action_flag": 1,
@@ -547,8 +629,13 @@
     "pk": 8,
     "fields": {
         "action_time": "2016-08-15T19:28:47.016Z",
-        "user": 1,
-        "content_type": 13,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "reusable_blog",
+            "post"
+        ],
         "object_id": "2",
         "object_repr": "New Bootstrap Theme",
         "action_flag": 1,
@@ -560,8 +647,13 @@
     "pk": 9,
     "fields": {
         "action_time": "2016-08-15T19:29:46.172Z",
-        "user": 1,
-        "content_type": 13,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "reusable_blog",
+            "post"
+        ],
         "object_id": "3",
         "object_repr": "Freelancer",
         "action_flag": 1,
@@ -573,8 +665,13 @@
     "pk": 10,
     "fields": {
         "action_time": "2016-08-15T19:32:15.482Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "1",
         "object_repr": "Sony Over-Ear Headphones",
         "action_flag": 1,
@@ -586,8 +683,13 @@
     "pk": 11,
     "fields": {
         "action_time": "2016-08-15T19:33:32.970Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "2",
         "object_repr": "Apple MacBook 13.3\u2033 Notebook - Core 2 Duo 2.4 GHz - 2 GB RAM - 160 GB HDD - White Apple MacBook 13.3\u2033 Notebook",
         "action_flag": 1,
@@ -599,8 +701,13 @@
     "pk": 12,
     "fields": {
         "action_time": "2016-08-15T19:35:10.593Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "3",
         "object_repr": "HP X3000 Wireless Optical Mouse - PC - Metallic Gray/Glossy Black HP X3000 Wireless Optical Mouse",
         "action_flag": 1,
@@ -612,8 +719,13 @@
     "pk": 13,
     "fields": {
         "action_time": "2016-08-15T19:39:19.584Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "2",
         "object_repr": "Apple MacBook 13.3\u2033 Notebook",
         "action_flag": 2,
@@ -625,8 +737,13 @@
     "pk": 14,
     "fields": {
         "action_time": "2016-08-15T19:39:25.466Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "2",
         "object_repr": "Apple MacBook 13.3\u2033 Notebook",
         "action_flag": 2,
@@ -638,8 +755,13 @@
     "pk": 15,
     "fields": {
         "action_time": "2016-08-15T19:39:35.836Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "root@mail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
         "object_id": "3",
         "object_repr": "HP X3000 Wireless Optical Mouse",
         "action_flag": 2,
