@@ -21,11 +21,11 @@
                            <span class="pull-right"> {{ subject|vote_percentage }}%</span>
                        </div>
                         {% autoescape off %}
-                        {% if thread.subject %}
+
                        <span class="pull-right">{% user_vote_button thread subject user %}</span>
 
 
-                        {% endif %}
+                        
                        {% endautoescape %}
                        <div class="col-md-6">
                            <div class="progress">
